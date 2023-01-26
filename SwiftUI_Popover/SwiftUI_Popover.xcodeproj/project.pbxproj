@@ -11,6 +11,7 @@
 		DB3C203C2982CC18003BFD2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3C203B2982CC18003BFD2C /* ContentView.swift */; };
 		DB3C203E2982CC1A003BFD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3C203D2982CC1A003BFD2C /* Assets.xcassets */; };
 		DB3C20412982CC1A003BFD2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3C20402982CC1A003BFD2C /* Preview Assets.xcassets */; };
+		DB3C20492982CC7B003BFD2C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3C20482982CC7B003BFD2C /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DB3C203B2982CC18003BFD2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB3C203D2982CC1A003BFD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB3C20402982CC1A003BFD2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB3C20482982CC7B003BFD2C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		DB3C20382982CC18003BFD2C /* SwiftUI_Popover */ = {
 			isa = PBXGroup;
 			children = (
+				DB3C20472982CC6D003BFD2C /* View */,
 				DB3C20392982CC18003BFD2C /* SwiftUI_PopoverApp.swift */,
 				DB3C203B2982CC18003BFD2C /* ContentView.swift */,
 				DB3C203D2982CC1A003BFD2C /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				DB3C20402982CC1A003BFD2C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB3C20472982CC6D003BFD2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB3C20482982CC7B003BFD2C /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB3C203C2982CC18003BFD2C /* ContentView.swift in Sources */,
+				DB3C20492982CC7B003BFD2C /* Home.swift in Sources */,
 				DB3C203A2982CC18003BFD2C /* SwiftUI_PopoverApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
