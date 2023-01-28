@@ -32,7 +32,23 @@ extension View {
     func iOSPopover<Content: View>(isPresented: Binding<Bool>, arrowDirection: UIPopoverArrowDirection, @ViewBuilder content: @escaping () -> Content) -> some View {
         self
             .background {
-                
+                PopOverController(isPresented: isPresented, arrowDirection: arrowDirection, content: content())
             }
+    }
+}
+
+struct PopOverController<Content: View>: UIViewControllerRepresentable {
+    @Binding var isPresented: Bool
+    var arrowDirection: UIPopoverArrowDirection
+    var content: Content
+    
+    func makeUIViewController(context: Context) -> UIViewController {
+        let controller = UIViewController()
+        controller.view.backgroundColor = .clear
+        return controller
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        
     }
 }
