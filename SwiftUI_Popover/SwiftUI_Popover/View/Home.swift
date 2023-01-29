@@ -12,7 +12,7 @@ struct Home: View {
         Button {
             showPopover.toggle()
         } label: {
-            Text("Show Popover")
+            Text("팝업 버튼")
         }
         .iOSPopover(isPresented: $showPopover, arrowDirection: .up) {
             Text("이것은 팝 오버 입니다")
